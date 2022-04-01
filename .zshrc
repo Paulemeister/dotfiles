@@ -16,5 +16,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+set -a
+source ~/.config/uservars
+set +a
+
 alias thumbnailfix="rm -rf ~/.cache/thumbnails/fail/gnome-thumbnail-factory/*"
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
